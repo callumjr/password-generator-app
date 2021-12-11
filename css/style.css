@@ -1,0 +1,215 @@
+:root {
+  --error-color: rgb(253, 1, 1);
+  --success-color: rgb(32, 136, 49);
+  --primary-color: #333;
+  --secondary-color: rgb(45, 103, 228);
+}
+
+body {
+  background-color: #fff;
+}
+
+input {
+  border: 1.5px solid #333;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.info__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 35px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+label {
+  color: var(--primary-color);
+}
+
+.chr__div,
+.num__div,
+.special__div,
+.word__div {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chr__div input :focus,
+.num__div input :focus,
+.special__div input :focus,
+.word__div input :focus {
+  outline: none;
+}
+
+.password__div {
+  margin-top: 0;
+  margin-bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+}
+
+.password__div input :focus {
+  outline: none;
+}
+
+.num__div,
+.special__div,
+.word__div,
+.generate__div {
+  margin-top: 20px;
+}
+
+.generate__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.generate__btn {
+  font-family: 'Ubutu', sans-serif;
+  text-decoration: none;
+  color: #fff;
+  padding: 7px;
+  border-radius: 5px;
+  font-weight: 300;
+  background-color: var(--primary-color);
+}
+
+.generate__btn:active {
+  background-color: #2d67e4;
+}
+
+.hidden {
+  display: none;
+}
+
+.fail__num,
+.fail__special,
+.fail__words {
+  font-size: 17px;
+  font-family: 'Ubutu', sans-serif;
+  font-weight: 400;
+  color: var(--error-color);
+  width: 300px;
+  text-align: center;
+  margin: 10px auto 0 auto;
+}
+
+.chr__label--div,
+.num__label--div,
+.special__label--div,
+.word__label--div {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+#chr__label,
+#num__label,
+#special__label,
+#word__label {
+  font-family: 'Ubuntu', sans-serif;
+  color: #000;
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+}
+
+#chr__label span,
+#num__label span,
+#special__label span,
+#word__label span {
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+}
+
+.chr__input--div,
+.num__input--div,
+.special__input--div,
+.word__input--div {
+  display: inline-block;
+}
+
+.chr__error--div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.chr__error--style {
+  width: 400px;
+  font-size: 20px;
+  color: var(--error-color);
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: 40px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.svg-button:link,
+.svg-button:visited {
+  color: #333;
+  margin-left: 2rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.svg-button:link:hover,
+.svg-button:visited:hover {
+  cursor: pointer;
+}
+
+.svg-button:link:active,
+.svg-button:visited:active {
+  color: var(--secondary-color);
+}
